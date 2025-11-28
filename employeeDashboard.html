@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="dashboard">
+    <!-- HEADER -->
+    <header class="top-header">
+      <h2 class="page-title">Employee Dashboard</h2>
+      <button id="logoutBtn" class="btn-logout">Logout</button>
+    </header>
+
+    <div class="action-bar">
+      <button id="createRequestBtn" class="btn-primary">Create Request</button>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="tabs">
+      <button id="tabRaised" class="tab">Raised by Me</button>
+      <button id="tabApproved" class="tab active">Approved</button>
+      <button id="tabInProgress" class="tab">In Progress</button>
+      <button id="tabClosed" class="tab">Closed</button>
+    </div>
+
+    <!-- REQUEST TABLE -->
+    <main id="employeeRequests" class="table-container"></main>
+
+    <script type="module" src="./apiClient.js"></script>
+    <script type="module" src="./employeeDashboard.js"></script>
+  </body>
+</html>
