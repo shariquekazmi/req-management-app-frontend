@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+        background: #f5f5f5;
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 10px;
+        background: #1a73e8;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .btn:hover {
+        background: #0c5cd6;
+      }
+      ul {
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Request Management System</h1>
+
+      <p>
+        The <b>Request Management System</b> allows employees to create and
+        track service requests, while managers review, approve, or reject them.
+        This system is divided into two modules: <b>Employee</b> and
+        <b>Manager</b>, enabling smooth workflows and proper tracking using
+        token-based authentication.
+      </p>
+
+      <h3>🔑 Get Started</h3>
+      <a href="login.html" class="btn">Login</a>
+      <a href="signup.html" class="btn">Sign Up</a>
+
+      <h3>✨ Features</h3>
+      <ul>
+        <li><b>User Signup</b> (Employee / Manager)</li>
+        <li>
+          <b>User Login</b> with token-based authentication (Access & Refresh
+          Token)
+        </li>
+        <li><b>Employee Dashboard</b></li>
+        <li>View Approved / In-Progress / Closed requests</li>
+        <li>View requests raised by the employee</li>
+        <li><b>Create new request</b></li>
+        <li><b>Manager Dashboard</b></li>
+        <li>View pending and processed requests</li>
+        <li><b>Approve / Reject requests</b></li>
+        <li><b>Request Details page</b></li>
+      </ul>
+    </div>
+  </body>
+</html>
